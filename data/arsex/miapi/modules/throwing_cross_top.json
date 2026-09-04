@@ -1,0 +1,126 @@
+{
+    "model": {
+        "path": "miapi:models/item/arsex/throwing_cross_top/[material.texture].json",
+        "transform": {
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "translation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+            }
+        }
+    },
+            "priority": 5,
+            "allowed_in_slots": [
+                "cross_top"
+            ],
+    "trail": {
+        "maxPoints": 1000,
+        "pointLifetime": 4,
+        "sampleInterval": 0.0,
+        "thickness": 0.3,
+        "texture": "miapi:item/trail_2",
+        "debug": false,
+        "color_provider": "material",
+        "color": {
+            "r": 255.0,
+            "g": 255.0,
+            "b": 255.0,
+            "a": 70.0
+        },
+        "transform": {
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": -45
+            },
+            "translation": {
+                "x": 0.25,
+                "y": 0.25,
+                "z": 0.5
+            },
+            "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+            }
+        }
+    },
+    "projectile_transform": {
+        "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        },
+        "translation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        },
+        "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+        }
+    },
+    "is_weapon": "true",
+    "priority": 7,
+    "repair_priority": -1,
+    "enchantments": {
+        "allowed": [
+            "minecraft:enchantable/sword",
+            "minecraft:enchantable/fire_aspect",
+            "minecraft:enchantable/sharp_weapon",
+            "minecraft:enchantable/weapon",
+            "minecraft:loyalty"
+        ]
+    },
+    "allowed_material": {
+        "allowedMaterials": [
+            "wood",
+            "metal",
+            "flint",
+            "bone",
+            "stone",
+            "crystal",
+            "glass"
+        ],
+        "cost": 1
+    },
+    "throw_damage": "[material.hardness]*0.35 + [material.density]*0.1",
+    "ability_context": {
+        "throw": {"min_hold_time":"0","cooldown":"10"}
+    },
+    "attributes": [
+        {
+            "attribute": "generic.attack_damage",
+            "value": "[material.hardness]*0.25 + [material.density]*0.05",
+            "operation": "+",
+            "slot": "mainhand"
+        },
+        {
+            "attribute": "generic.attack_speed",
+            "value": "0.009",
+            "operation": "*",
+            "slot": "mainhand",
+	    "target_operation": "*"
+        }
+    ],
+    "display_name": "miapi.module.arsex.throwing_cross.name",
+    "item_id": "miapi:modular_sword",
+    "module_tag": [
+        "default",
+        "throwing_weapon",
+        "sharp",
+	"blade"
+    ]
+}

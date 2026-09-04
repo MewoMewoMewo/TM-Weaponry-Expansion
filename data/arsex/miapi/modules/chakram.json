@@ -1,0 +1,161 @@
+{
+    "model": [
+        {
+            "path": "miapi:models/item/handheld/katars/[material.texture].json",
+            "transform": {
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "translation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "scale": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 1
+                }
+            }
+        }
+    ],
+    "trail": {
+        "maxPoints": 1000,
+        "pointLifetime": 4,
+        "sampleInterval": 0.0,
+        "thickness": 0.3,
+        "texture": "miapi:item/trail_2",
+        "debug": false,
+        "color_provider": "material",
+        "color": {
+            "r": 255.0,
+            "g": 255.0,
+            "b": 255.0,
+            "a": 70.0
+        },
+        "transform": {
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": -45
+            },
+            "translation": {
+                "x": 0.25,
+                "y": 0.25,
+                "z": 0.5
+            },
+            "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+            }
+        }
+    },
+    "projectile_transform": {
+        "rotation": {
+            "x": 0,
+            "y": 180,
+            "z": 0
+        },
+        "translation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        },
+        "scale": {
+            "x": 0.8,
+            "y": 0.8,
+            "z": 0.8
+        }
+    },
+    "projectile_animation": {
+        "type": "miapi:simple_rotation",
+        "axis": "Z",
+        "degrees_per_tick": 122,
+        "offset": 12
+    },
+    "throw_damage": "[material.hardness]*0.8 + [material.flexibility]*0.2+[material.density]*0.6",
+    "throw_speed": "1.5",
+    "projectile_accuracy": "-[material.flexibility]*0.3",
+    "projectile_speed": "10-[material.density]*0.4",
+    "shot_velocity": 1.5,
+    "ability_context": {
+        "throw": {}
+    },
+    "handheld_item": true,
+    "display_name": "miapi.module.arsex.chakram.name",
+    "item_id": "miapi:modular_katars",
+    "enchantments": {
+        "allowed": [
+            "minecraft:enchantable/sword",
+            "minecraft:enchantable/fire_aspect",
+            "minecraft:enchantable/sharp_weapon",
+            "minecraft:enchantable/weapon",
+	    "minecraft:loyalty"
+        ]
+    },
+    "priority": 0,
+    "repair_priority": -1,
+    "allowed_in_slots": [
+        "handheld_blade"
+    ],
+    "allowed_material": {
+        "allowedMaterials": [
+            "wood",
+            "metal",
+            "flint",
+            "bone",
+            "stone",
+            "crystal",
+            "glass"
+        ],
+        "cost": 1
+    },
+    "combo": "5+[material.tier]",
+    "combo_time": 20,
+    "attributes": [
+        {
+            "attribute": "miapi:generic.attack_range",
+            "value": "0.0",
+            "operation": "+",
+            "slot": "mainhand"
+        },
+        {
+            "attribute": "generic.attack_speed",
+            "value": "+0.35",
+            "operation": "+",
+            "slot": "mainhand"
+        },
+        {
+            "attribute": "generic.attack_damage",
+            "value": "[material.hardness]*0.67",
+            "operation": "+",
+            "slot": "mainhand"
+        }
+    ],
+    "material_indication": {
+        "hardness": {
+            "strength": 3,
+            "info": {
+                "type": "translatable",
+                "translate": "tm_arsenal.material_indication.blade.damage",
+                "color": "dark_gray"
+            }
+        },
+        "durability": 1
+    },
+    "durability": "[material.durability]* 0.5",
+    "better_combat_config": "bettercombat:dagger",
+    "module_tag": [
+        "default",
+        "blade",
+        "handheld",
+        "dual_wield",
+        "head",
+        "blade_short",
+        "handheld_item"
+    ],
+    "slashing":"[material.hardness]*0.3"
+}

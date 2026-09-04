@@ -1,0 +1,151 @@
+{
+    "model": {
+        "path": "miapi:models/item/arsex/shuriken_base/[material.texture].json",
+        "transform": {
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "translation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "scale": {
+                "x": 0.7,
+                "y": 0.7,
+                "z": 0.7
+            }
+        }
+    },
+            "priority": 5,
+            "allowed_in_slots": [
+                "shuriken_base"
+            ],
+            "slots": {
+                "top": {
+                    "allowed": [
+                        "throwable_teeth"
+                    ],
+                    "translationKey": "miapi.slot.arsex.throwable_teeth.name",
+                    "transform": {
+                        "rotation": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                        },
+                        "translation": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                        },
+                        "scale": {
+                            "x": 1,
+                            "y": 1,
+                            "z": 1
+                        }
+                    }
+                }
+	   },
+    "trail": {
+        "maxPoints": 1000,
+        "pointLifetime": 4,
+        "sampleInterval": 0.0,
+        "thickness": 0.3,
+        "texture": "miapi:item/trail_2",
+        "debug": false,
+        "color_provider": "material",
+        "color": {
+            "r": 255.0,
+            "g": 255.0,
+            "b": 255.0,
+            "a": 70.0
+        },
+        "transform": {
+            "rotation": {
+                "x": 90,
+                "y": 0,
+                "z": 0
+            },
+            "translation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+            }
+        }
+    },
+    "projectile_transform": {
+        "rotation": {
+            "x": 180,
+            "y": 0,
+            "z": 0
+        },
+        "translation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        },
+        "scale": {
+            "x": 0.6,
+            "y": 0.6,
+            "z": 0.6
+        }
+    },
+    "projectile_animation": {
+        "type": "miapi:simple_rotation",
+        "axis": "Y",
+        "degrees_per_tick": 0,
+        "offset": 0
+    },
+    "is_weapon": "false",
+    "priority": 7,
+    "repair_priority": -1,
+    "enchantments": {
+        "allowed": [
+            "minecraft:enchantable/sword",
+            "minecraft:enchantable/fire_aspect",
+            "minecraft:enchantable/sharp_weapon",
+            "minecraft:enchantable/weapon",
+            "minecraft:loyalty"
+        ]
+    },
+    "water_drag": "0.89",
+    "allowed_material": {
+        "allowedMaterials": [
+            "wood",
+            "metal",
+            "flint",
+            "bone",
+            "stone",
+            "crystal",
+            "glass"
+        ],
+        "cost": 0.1
+    },
+    "throw_speed": "2",
+    "projectile_accuracy": "-10",
+    "projectile_speed": "16",
+    "shot_velocity": 2,
+    "attributes": [
+        {
+            "attribute": "minecraft:generic.gravity",
+            "value": "-0.5+[material.density]*0.02",
+            "operation": "*",
+            "slot": "projectile",
+            "target_operation": "*"
+        }
+    ],
+    "display_name": "miapi.module.arsex.shuriken_base.name",
+    "item_id": "miapi:modular_stackable_item",
+    "module_tag": [
+        "default",
+        "throwing_weapon",
+        "sharp"
+    ]
+}

@@ -1,0 +1,156 @@
+{
+    "model": [
+        {
+            "path": "miapi:models/item/arsex/greathammer/[material.texture].json",
+            "transform": {
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "translation": {
+                    "x": -4,
+                    "y": -4,
+                    "z": 0
+                },
+                "scale": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 1
+                }
+            }
+        }
+    ],
+    "module_stats": {
+        "blade_size": 1,
+        "depth": 1,
+        "width": 4,
+        "height": 3.5,
+        "speed": 3.5
+    },
+    "priority": 2,
+    "repair_priority": -1,
+    "better_combat_config": "bettercombat:greathammer",
+    "allowed_in_slots": [
+        "polearm_blade"
+    ],
+    "enchantments": {
+        "allowed": [
+            "minecraft:breach",
+	    "minecraft:unbreaking",
+	    "minecraft:mending"
+        ]
+    },
+    "mining_shape": [
+        {
+            "condition": {
+                "type": "block_tag",
+                "tags": [
+                    "mineable/pickaxe"
+                ]
+            },
+            "modifier": {
+                "require_same": true
+            },
+            "mode": {
+                "type": "staggered",
+                "speed": "[module.speed]"
+            },
+            "shape": {
+                "type": "cube",
+                "width": "[module.width]",
+                "height": "[module.height]",
+                "depth": "[module.depth]"
+            }
+        }
+    ],
+    "allowed_material": {
+        "allowedMaterials": [
+            "wood",
+            "metal",
+            "flint",
+            "bone",
+            "stone",
+            "rod",
+            "crystal"
+        ],
+        "cost": 6
+    },
+    "mining_level": {
+        "pickaxe": {
+            "allowed": [
+                "#minecraft:mineable/pickaxe"
+            ],
+            "use_material": true,
+            "speed": "[material.mining_speed]"
+        }
+    },
+    "material_indication": {
+        "density": {
+            "strength": 3,
+            "info": {
+                "type": "translatable",
+                "translate": "tm_arsenal.material_indication.blade.damage",
+                "color": "dark_gray"
+            }
+        },
+        "durability": 1
+    },
+    "attributes": [
+        {
+            "attribute": "miapi:generic.reach",
+            "value": "-0",
+            "operation": "+",
+            "slot": "mainhand"
+        },
+        {
+            "attribute": "miapi:generic.attack_range",
+            "value": "0",
+            "operation": "+",
+            "slot": "mainhand"
+        },
+        {
+            "attribute": "generic.attack_speed",
+            "value": " -0.95",
+            "operation": "+",
+            "slot": "mainhand"
+        },
+        {
+            "attribute": "generic.attack_speed",
+            "value": "-[material.density]*0.039",
+            "operation": "+",
+            "slot": "mainhand"
+        },
+        {
+            "attribute": "generic.attack_damage",
+            "value": "[material.hardness]/1.4+[material.density]*6.6",
+            "operation": "+",
+            "slot": "mainhand"
+        },
+        {
+            "attribute": "generic.attack_knockback",
+            "value": "1",
+            "operation": "+",
+            "slot": "mainhand"
+        }
+    ],
+    "bludgeon": "[material.tier]*0.5+[material.density]*1+[material.hardness]*1",
+    "durability": "[material.durability]* 0.6",
+    "display_name": "miapi.module.arsex.greathammer.name",
+    "item_id": "miapi:hammer",
+    "fake_item_tag": [
+        "mincraft:pickaxes",
+        "c:pickaxe",
+        "c:tools",
+        "c:tool/pickaxe"
+    ],
+    "module_tag": [
+        "default",
+        "handheld",
+        "pickaxe",
+        "tool",
+        "head",
+        "tool_head",
+        "pickaxe_head"
+    ]
+}

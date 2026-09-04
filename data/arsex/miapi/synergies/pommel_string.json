@@ -1,0 +1,38 @@
+{
+    "type": "tag",
+    "tag": "pommel",
+  "condition": {
+    "type": "true"
+  },
+    "properties": {
+        "replace": {
+            "slots": {
+                "pommel_cosmetic": {
+                    "allowed": [
+                  "pommel_cosmetic"
+                    ],
+                    "slotType": "cosmetic",
+                    "translationKey": "miapi.slot.arsex.pommel_cosmetic.name",
+               "transform": {
+                        "rotation": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                        },
+                        "translation": {
+
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                        },
+                        "scale": {
+                            "x": 1,
+                            "y": 1,
+                            "z": 1
+                        }
+                    }
+                }
+            }
+}
+}
+}

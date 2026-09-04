@@ -1,0 +1,123 @@
+{
+    "model": [
+        {
+            "path": "miapi:models/item/arsex/glaive/[material.texture].json",
+            "color": "[material.color]",
+            "transform": {
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "translation": {
+                    "x": 1,
+                    "y": 0,
+                    "z": -0.001
+                },
+                "scale": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 1
+                }
+            }
+        }
+    ],
+    "is_weapon": "true",
+    "priority": -10,
+    "repair_priority": -1,
+    "enchantments": {
+        "allowed": [
+            "minecraft:enchantable/sword",
+            "minecraft:enchantable/fire_aspect",
+            "minecraft:enchantable/sharp_weapon",
+            "minecraft:enchantable/weapon"
+        ]
+    },
+    "allowed_in_slots": [
+        "polearm_blade"
+    ],
+    "allowed_material": {
+        "allowedMaterials": [
+            "wood",
+            "metal",
+            "flint",
+            "bone",
+            "stone",
+            "crystal",
+            "glass"
+        ],
+        "cost": 2
+    },
+    "fake_enchants": {
+        "minecraft:sweeping_edge": "[old_level]+1"
+    },
+    "module_stats": {
+        "blade_size": 1
+    },
+    "material_indication": {
+        "hardness": {
+            "strength": 2,
+            "info": {
+                "type": "translatable",
+                "translate": "tm_arsenal.material_indication.blade.damage",
+                "color": "dark_gray"
+            }
+        },
+"durability": 1
+    },
+    "attributes": [
+        {
+            "attribute": "generic.attack_speed",
+            "value": "0.0",
+            "operation": "+",
+            "slot": "mainhand"
+        },
+        {
+            "attribute": "generic.attack_range",
+            "value": "0.65",
+            "operation": "+",
+            "slot": "mainhand"
+        },
+        {
+            "attribute": "generic.attack_damage",
+            "value": "[material.hardness]*1.12+[material.flexibility]*-0.01",
+            "operation": "+",
+            "slot": "mainhand"
+        }
+    ],
+    "mining_level": {
+        "sword": {
+            "allowed": [
+                "#minecraft:sword_efficient"
+            ],
+            "use_material": false,
+            "speed": "1.5"
+        },
+        "cobweb": {
+            "allowed": [
+                [
+                    "minecraft:cobweb"
+                ]
+            ],
+            "use_material": false,
+            "correct_for_drops": true,
+            "speed": "15"
+        }
+    },
+    "durability": "[material.durability]* 0.4",
+    "gui_offset": {
+        "sizeX": -7,
+        "sizeY": -7
+    },
+    "better_combat_config": "bettercombat:glaive2",
+    "display_name": "miapi.module.arsex.glaive.name",
+    "item_id": "miapi:modular_scythe",
+    "module_tag": [
+        "default",
+        "handheld",
+        "blade",
+        "head",
+        "blade",
+        "sharp"
+    ]
+}

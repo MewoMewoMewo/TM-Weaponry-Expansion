@@ -1,0 +1,96 @@
+{
+    "model": {
+        "path": "miapi:models/item/arsex/cutlass_guard/[material.texture].json",
+        "transform": {
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "translation": {
+                "x": -4,
+                "y": -4,
+                "z": 0.001
+            },
+            "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+            }
+        }
+    },
+    "allowed_in_slots": [
+        "sword_guard",
+        "polearm_guard"
+    ],
+    "slots": {
+        "blade": {
+            "allowed": [
+                "sword_blade",
+                "sword_blade_small",
+                "sword_blade_large"
+            ],
+            "allowedMerge": [
+                "small_blade",
+                "medium_blade",
+                "large_blade"
+            ],
+            "translationKey": "miapi.slot.sword_blade.name",
+            "transform": {
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "translation": {
+                    "x": 2,
+                    "y": 2,
+                    "z": 0
+                },
+                "scale": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 1
+                }
+            }
+        }
+    },
+    "attributes": [
+        {
+            "attribute": "generic.attack_speed",
+            "value": "0.10-[material.density]/90+[material.flexibility]/45",
+            "operation": "+",
+            "slot": "mainhand"
+        },
+        {
+            "attribute": "generic.armor",
+            "value": "[material.armor]*0.1",
+            "operation": "+",
+            "slot": "mainhand"
+        }
+    ],
+    "priority": -2,
+    "repair_priority": 0,
+    "allowed_material": {
+        "allowedMaterials": [
+            "wood",
+            "metal",
+            "flint",
+            "bone",
+            "stone",
+            "crystal",
+            "glass"
+        ],
+        "cost": 1
+    },
+    "material_indication": {
+        "durability": 1
+    },
+    "durability": "[material.durability]* 0.02",
+    "module_tag": [
+        "default",
+        "handheld",
+        "guard",
+        "guard_normal"
+    ]
+}

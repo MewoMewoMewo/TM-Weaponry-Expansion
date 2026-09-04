@@ -1,0 +1,108 @@
+{
+    "model": [
+        {
+            "path": "miapi:models/item/arsex/mallet/[material.texture].json",
+            "transform": {
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "translation": {
+                    "x": -7,
+                    "y": -7,
+                    "z": 0
+                },
+                "scale": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 1
+                }
+            }
+        }
+    ],
+    "module_stats": {
+        "blade_size": 1,
+        "depth": 1,
+        "width": 3,
+        "height": 3,
+        "speed": 5
+    },
+    "priority": 1,
+    "repair_priority": -1,
+    "better_combat_config": "bettercombat:club",
+    "allowed_in_slots": [
+        "tool_head"
+    ],
+    "enchantments": {
+        "allowed": [
+            "minecraft:breach"
+        ]
+    },
+    "allowed_material": {
+        "allowedMaterials": [
+            "wood",
+            "metal",
+            "flint",
+            "bone",
+            "stone",
+            "rod",
+            "crystal"
+        ],
+        "cost": 4
+    },
+   "material_indication": {
+        "density": {
+            "strength": 3,
+            "info": {
+                "type": "translatable",
+                "translate": "tm_arsenal.material_indication.blade.damage",
+                "color": "dark_gray"
+            }
+        },
+        "durability": 1
+    },
+    "attributes": [
+        {
+            "attribute": "miapi:generic.reach",
+            "value": "0",
+            "operation": "+",
+            "slot": "mainhand"
+        },
+        {
+            "attribute": "miapi:generic.attack_range",
+            "value": "0",
+            "operation": "+",
+            "slot": "mainhand"
+        },
+        {
+            "attribute": "generic.attack_speed",
+            "value": " -0.5-[material.density]*0.12",
+            "operation": "+",
+            "slot": "mainhand"
+        },
+        {
+            "attribute": "generic.attack_damage",
+            "value": "[material.hardness]/1.3+[material.density]*0.6",
+            "operation": "+",
+            "slot": "mainhand"
+        },
+        {
+            "attribute": "miapi:generic.armor_crushing",
+            "value": "[material.hardness]/1.6+[material.density]*0.6",
+            "operation": "+",
+            "slot": "mainhand"
+        }
+    ],
+    "fake_enchants":{
+	"minecraft:knockback":"[old.level]+1"
+},
+    "durability": "[material.durability]*0.5",
+    "display_name": "miapi.module.arsex.mallet.name",
+    "item_id": "miapi:modular_mace",
+    "module_tag": [
+        "default",
+        "handheld",
+        "head"
+    ]
+}

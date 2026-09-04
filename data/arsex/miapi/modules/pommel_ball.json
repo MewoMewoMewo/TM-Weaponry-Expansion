@@ -1,0 +1,42 @@
+{
+    "model": {
+        "path": "miapi:models/item/arsex/pommel_ball/[material.texture].json",
+        "transform": {
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "translation": {
+                "x": 1,
+                "y": 0,
+                "z": 0
+            },
+            "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+            }
+        }
+    },
+    "allowed_in_slots": [
+        "pommel_string"
+    ],
+    "allowed_material": {
+        "allowedMaterials": [
+            "wood",
+            "metal",
+            "flint",
+            "bone",
+            "stone",
+            "crystal",
+            "glass"
+        ],
+        "cost": 1
+    },
+    "module_tag": [
+        "default",
+        "handheld",
+        "pommel_string_cosmetic"
+    ]
+}

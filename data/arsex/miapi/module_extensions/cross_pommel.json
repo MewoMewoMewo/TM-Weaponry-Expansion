@@ -1,0 +1,9 @@
+{
+    "type": "module",
+    "id": "tm_arsenal:pommel/cross",
+        "merge": {
+    "module_tag": [
+	"pommel"
+]
+}
+}

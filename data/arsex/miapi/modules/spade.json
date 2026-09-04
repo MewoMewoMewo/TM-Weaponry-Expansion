@@ -1,0 +1,134 @@
+{
+    "model": [
+        {
+            "path": "miapi:models/item/sword/handle/extentions/type_1/[material.texture].json",
+            "color_provider": "parent",
+            "transform": {
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "translation": {
+                    "x": 2,
+                    "y": 2,
+                    "z": 0.001
+                },
+                "scale": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 1
+                }
+            }
+        },
+        {
+            "path": "miapi:models/item/arsex/spade/[material.texture].json",
+            "transform": {
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "translation": {
+                    "x": -8,
+                    "y": -7,
+                    "z": 0
+                },
+                "scale": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 1
+                }
+            }
+        }
+    ],
+    "module_stats": {
+        "blade_size": 1
+    },
+    "priority": 2,
+    "repair_priority": -1,
+    "ability_context": {
+        "shovel_ability": {}
+    },
+    "allowed_in_slots": [
+        "tool_head"
+    ],
+    "enchantments": {
+        "allowed": [
+            "minecraft:enchantable/mining",
+            "minecraft:enchantable/mining_loot",
+            "c:enchtantable/shovel",
+            "minecraft:shovels"
+        ]
+    },
+    "mining_level": {
+        "shovel": {
+            "allowed": [
+                "#minecraft:mineable/shovel"
+            ],
+            "use_material": true,
+            "speed": "[material.mining_speed]*0.8"
+        }
+    },
+    "material_indication": {
+        "durability": 1,
+        "mining_speed": 1
+    },
+    "attributes": [
+        {
+            "attribute": "miapi:generic.reach",
+            "value": "-0.4",
+            "operation": "+",
+            "slot": "mainhand"
+        },
+        {
+            "attribute": "generic.attack_speed",
+            "value": "-0.4",
+            "operation": "+",
+            "slot": "mainhand"
+        },
+        {
+            "attribute": "miapi:generic.attack_range",
+            "value": "-0.4",
+            "operation": "+",
+            "slot": "mainhand"
+        },
+        {
+            "attribute": "generic.attack_damage",
+            "value": "[material.hardness]*1.05-0.7",
+            "operation": "+",
+            "slot": "mainhand"
+        }
+    ],
+    "durability": "[material.durability]",
+    "allowed_material": {
+        "allowedMaterials": [
+            "wood",
+            "metal",
+            "flint",
+            "bone",
+            "stone",
+            "crystal"
+        ],
+        "cost": 1
+    },
+    "display_name": "miapi.module.arsex.spade.name",
+
+    "item_id": "miapi:modular_shovel",
+    "fake_item_tag": [
+        "mincraft:shovels",
+        "c:shovels",
+        "c:tools",
+        "c:tool/shovel"
+    ],
+    "better_combat_config":"bettercombat:spear",
+    "module_tag": [
+        "default",
+        "handheld",
+        "shovel",
+        "tool",
+        "head",
+        "tool_head",
+        "shovel_head"
+    ]
+}

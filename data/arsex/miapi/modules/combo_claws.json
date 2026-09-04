@@ -1,0 +1,113 @@
+{
+    "model": [
+        {
+            "path": "miapi:models/item/handheld/katars/[material.texture].json",
+            "transform": {
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "translation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "scale": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 1
+                }
+            }
+        }
+    ],
+    "handheld_item": true,
+    "display_name": "miapi.module.arsex.combo_claws.name",
+    "item_id": "miapi:modular_trident",
+    "enchantments": {
+        "allowed": [
+            "minecraft:enchantable/sword",
+            "minecraft:enchantable/fire_aspect",
+            "minecraft:enchantable/sharp_weapon",
+            "minecraft:enchantable/weapon",
+            "minecraft:riptide"
+        ]
+    },
+    "priority": 0,
+    "repair_priority": -1,
+    "allowed_in_slots": [
+        "handheld_blade"
+    ],
+    "allowed_material": {
+        "allowedMaterials": [
+            "wood",
+            "metal",
+            "flint",
+            "bone",
+            "stone",
+            "crystal",
+            "glass"
+        ],
+        "cost": 1
+    },
+    "combo": "3+[material.tier]",
+    "combo_time": 18,
+    "attributes": [
+        {
+            "attribute": "miapi:generic.attack_range",
+            "value": "0.0",
+            "operation": "+",
+            "slot": "mainhand"
+        },
+        {
+            "attribute": "generic.attack_speed",
+            "value": "+0.2-([material.density]/10)",
+            "operation": "+",
+            "slot": "mainhand"
+        },
+        {
+            "attribute": "generic.attack_damage",
+            "value": "[material.hardness]*0.3",
+            "operation": "+",
+            "slot": "mainhand"
+        }
+    ],
+"armor_pen":"[material.hardness]*0.01",
+    "material_indication": {
+        "hardness": {
+            "strength": 3,
+            "info": {
+                "type": "translatable",
+                "translate": "tm_arsenal.material_indication.blade.damage",
+                "color": "dark_gray"
+            }
+        },
+        "durability": 1
+    },
+    "ability_context": [
+        {
+            "id": "arsex:fast_lunge",
+            "type": "miapi:riptide",
+            "data": {
+		"cooldown": 0,
+                "spin_duration_base": 1,
+                "riptide_strength": 1,
+                "require_fluid": false,
+                "custom_fluid": "minecraft:lava",
+                "custom_sound": "minecraft:entity.player.attack.sweep"
+            }
+        }
+    ],
+    "durability": "[material.durability]* 0.5",
+    "better_combat_config": "bettercombat:claw",
+    "module_tag": [
+        "default",
+        "blade",
+        "handheld",
+        "dual_wield",
+        "head",
+        "handheld_item"
+    ],
+
+"load_condition": {"type":"not"}
+}

@@ -1,0 +1,152 @@
+{
+    "model": {
+        "path": "miapi:models/item/arsex/claymore/[material.texture].json",
+        "transform": {
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "translation": {
+                "x": 2,
+                "y": 2,
+                "z": -0.001
+            },
+            "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+            }
+        }
+    },
+    "is_weapon": "true",
+    "module_stats": {
+        "blade_size": 1.2
+    },
+    "priority": 4.5,
+    "repair_priority": -1,
+    "enchantments": {
+        "allowed": [
+            "minecraft:enchantable/sword",
+            "minecraft:enchantable/fire_aspect",
+            "minecraft:enchantable/sharp_weapon",
+            "minecraft:enchantable/weapon"
+        ]
+    },
+    "allowed_in_slots": [
+        "sword_blade_large"
+    ],
+    "allowed_material": {
+        "allowedMaterials": [
+            "wood",
+            "metal",
+            "flint",
+            "bone",
+            "stone",
+            "crystal",
+            "glass"
+        ],
+        "cost": 3
+    },
+    "better_combat_config": "bettercombat:claymore2",
+    "material_indication": {
+        "hardness": {
+            "strength": 2,
+            "info": {
+                "type": "translatable",
+                "translate": "tm_arsenal.material_indication.blade.damage",
+                "color": "dark_gray"
+            }
+        },
+        "flexibility": {
+            "strength": 2,
+            "info": {
+                "type": "translatable",
+                "translate": "tm_arsenal.material_indication.blade.blocking",
+                "color": "dark_gray"
+            }
+        },
+        "durability": 1
+    },
+    "attributes": [
+        {
+            "attribute": "generic.attack_speed",
+            "value": "-0.04*[material.density]",
+            "operation": "+",
+            "slot": "mainhand"
+        },
+        {
+            "attribute": "generic.attack_speed",
+            "value": "-1",
+            "operation": "+",
+            "slot": "mainhand"
+        },
+        {
+            "attribute": "generic.attack_damage",
+            "value": "[material.hardness]*2.2+[material.density]*1",
+            "operation": "+",
+            "slot": "mainhand"
+        },
+        {
+            "attribute": "miapi:generic.attack_range",
+            "value": "0.45",
+            "operation": "+",
+            "slot": "mainhand"
+        },
+        {
+            "attribute": "miapi:generic.crit_chance",
+            "value": "0.1",
+            "operation": "+",
+            "slot": "mainhand"
+        },
+        {
+            "attribute": "miapi:generic.crit_damage",
+            "value": "2",
+            "operation": "+",
+            "slot": "mainhand"
+        }
+    ],
+    "durability": "[material.durability]* 0.25",
+    "gui_offset": {
+        "sizeX": 6,
+        "sizeY": 6
+    },
+    "mining_level": {
+        "sword": {
+            "allowed": [
+                "#minecraft:sword_efficient"
+            ],
+            "use_material": false,
+            "speed": "1.5"
+        },
+        "cobweb": {
+            "allowed": [
+                [
+                    "minecraft:cobweb"
+                ]
+            ],
+            "use_material": false,
+            "correct_for_drops": true,
+            "speed": "15"
+        }
+    },
+    "display_name": "miapi.module.arsex.claymore.name",
+    "ability_context": {
+        "block": {
+            "blocking": "[material.flexibility]*1.4 + 14/ [collect.add.module.blade_size]"
+        }
+    },
+    "item_id": "miapi:modular_greatsword",
+    "fake_item_tag": [
+        "minecraft:swords",
+        "c:swords"
+    ],
+    "module_tag": [
+        "default",
+        "handheld",
+        "head",
+        "polearm_glaive",
+	"blade"
+
+    ]
+}

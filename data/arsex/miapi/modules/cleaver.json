@@ -1,0 +1,193 @@
+{
+    "model": {
+        "path": "miapi:models/item/arsex/cleaver/[material.texture].json",
+        "transform": {
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "translation": {
+                "x": -2,
+                "y": -2,
+                "z": -0.001
+            },
+            "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+            }
+        }
+    },
+    "trail": {
+        "maxPoints": 1000,
+        "pointLifetime": 4,
+        "sampleInterval": 0.0,
+        "thickness": 0.3,
+        "texture": "miapi:item/trail_2",
+        "debug": false,
+        "color_provider": "material",
+        "color": {
+            "r": 255.0,
+            "g": 255.0,
+            "b": 255.0,
+            "a": 70.0
+        },
+        "transform": {
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": -45
+            },
+            "translation": {
+                "x": 0.25,
+                "y": 0.25,
+                "z": 0.5
+            },
+            "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+            }
+        }
+    },
+    "projectile_transform": {
+        "rotation": {
+            "x": 0,
+            "y": 180,
+            "z": 0
+        },
+        "translation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        },
+        "scale": {
+            "x": 0.8,
+            "y": 0.8,
+            "z": 0.8
+        }
+    },
+    "projectile_animation": {
+        "type": "miapi:simple_rotation",
+        "axis": "Z",
+        "degrees_per_tick": 93,
+        "offset": 12
+    },
+    "is_weapon": "true",
+    "priority": 7,
+    "repair_priority": -1,
+    "handheld_item": true,
+    "enchantments": {
+        "allowed": [
+            "minecraft:enchantable/sword",
+            "minecraft:enchantable/fire_aspect",
+            "minecraft:enchantable/sharp_weapon",
+            "minecraft:enchantable/weapon",
+            "minecraft:loyalty"
+        ]
+    },
+    "allowed_in_slots": [
+        "sword_blade_small"
+    ],
+    "better_combat_config": "bettercombat:cleaver",
+    "water_drag": "0.89",
+    "allowed_material": {
+        "allowedMaterials": [
+            "wood",
+            "metal",
+            "flint",
+            "bone",
+            "stone",
+            "crystal",
+            "glass"
+        ],
+        "cost": 1
+    },
+    "material_indication": {
+        "hardness": {
+            "strength": 2,
+            "info": {
+                "type": "translatable",
+                "translate": "tm_arsenal.material_indication.blade.damage",
+                "color": "dark_gray"
+            }
+        },
+        "flexibility": {
+            "strength": 2,
+            "info": {
+                "type": "translatable",
+                "translate": "tm_arsenal.material_indication.blade.damage",
+                "color": "dark_gray"
+            }
+        },
+        "durability": 1
+    },
+    "attributes": [
+        {
+            "attribute": "miapi:generic.attack_range",
+            "value": "-1.0",
+            "operation": "+",
+            "slot": "mainhand"
+        },
+        {
+            "attribute": "generic.attack_damage",
+            "value": "[material.hardness]*0.87 + [material.flexibility]*0.2+[material.density]*0.15",
+            "operation": "+",
+            "slot": "mainhand"
+        },
+        {
+            "attribute": "generic.attack_speed",
+            "value": "-0.2",
+            "operation": "+",
+            "slot": "mainhand"
+        }
+    ],
+    "slashing":"[material.hardness]*0.6",
+    "throw_damage": "[material.hardness]*1 + [material.flexibility]*0.2+[material.density]*0.6",
+    "throw_speed": "1.4",
+    "projectile_accuracy": "-40-[material.flexibility]*0.3",
+    "projectile_speed": "-30-[material.density]*1.5",
+    "shot_velocity": 1.7,
+    "mining_level": {
+        "sword": {
+            "allowed": [
+                "#minecraft:sword_efficient"
+            ],
+            "use_material": false,
+            "speed": "1.5"
+        },
+        "cobweb": {
+            "allowed": [
+                [
+                    "minecraft:cobweb"
+                ]
+            ],
+            "use_material": false,
+            "correct_for_drops": true,
+            "speed": "15"
+        }
+    },
+    "durability": "[material.durability]* 0.2",
+    "module_stats": {
+        "blade_size": 1
+    },
+    "ability_context": {
+        "throw": {}
+    },
+    "display_name": "miapi.module.arsex.cleaver.name",
+    "item_id": "miapi:modular_throwing_knife",
+    "fake_item_tag": [
+        "minecraft:swords",
+        "c:swords",
+        "c:tools/knife",
+        "c:knife"
+    ],
+    "module_tag": [
+        "default",
+        "handheld",
+        "blade",
+        "head",
+        "throwing_weapon"
+    ]
+}

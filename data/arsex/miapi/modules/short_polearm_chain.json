@@ -1,0 +1,173 @@
+{
+    "flail_model": {
+        "chainLength": 0.1,
+        "segments": 6,
+        "rigidness": 0,
+        "chainRadius": 0.5,
+        "debug": true,
+        "iterations": 20,
+        "transform": {
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "translation": {
+                "x": 0.25,
+                "y": 0.25,
+                "z": 0.5
+            },
+            "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+            }
+        },
+        "baseSegments": [
+            {
+                "collide": true,
+                "gravity": 0.06,
+                "model": {
+                    "path": "miapi:models/item/chain.json",
+                    "color":"[material.color]",
+                    "transform": {
+                        "rotation": {
+                            "x": 90,
+                            "y": 0,
+                            "z": 0
+                        },
+                        "translation": {
+                            "x": -1,
+                            "y": 0.5,
+                            "z": 0
+                        },
+                        "scale": {
+                            "x": 2,
+                            "y": 2,
+                            "z": 2
+                        }
+                    }
+                }
+            },
+            {
+                "collide": true,
+                "gravity": 0.06,
+                "model": {
+                    "path": "miapi:models/item/chain.json",
+                    "color":"[material.color]",
+                    "transform": {
+                        "rotation": {
+                            "x": 90,
+                            "y": 90,
+                            "z": 0
+                        },
+                        "translation": {
+                            "x": -0.5,
+                            "y": -1,
+                            "z": 0
+                        },
+                        "scale": {
+                            "x": 2,
+                            "y": 2,
+                            "z": 2
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "is_weapon": "true",
+    "priority": -10,
+    "repair_priority": -1,
+    "allowed_in_slots": [
+        "polearm_blade"
+    ],
+    "allowed_material": {
+        "allowedMaterials": [
+            "wood",
+            "metal",
+            "flint",
+            "bone",
+            "stone",
+            "crystal",
+            "glass"
+        ],
+        "cost": 2
+    },
+    "fake_enchants": {
+        "minecraft:sweeping": 1
+    },
+    "module_stats": {
+        "blade_size": 1
+    },
+    "material_indication": {
+        "hardness": {
+            "strength": 2,
+            "info": {
+                "type": "translatable",
+                "translate": "tm_arsenal.material_indication.blade.damage",
+                "color": "dark_gray"
+            }
+        },
+"durability": 1
+    },
+    "attributes": [
+        {
+            "attribute": "generic.attack_speed",
+            "value": "[material.density]*-0.005",
+            "operation": "+",
+            "slot": "mainhand"
+        },
+        {
+            "attribute": "generic.attack_range",
+            "value": "0.7",
+            "operation": "+",
+            "slot": "mainhand"
+        },
+        {
+            "attribute": "generic.attack_damage",
+            "value": "[material.flexibility]*0.005",
+            "operation": "+",
+            "slot": "mainhand"
+        }
+    ],
+    "durability": "[material.durability]* 0.4",
+    "gui_offset": {
+        "sizeX": -7,
+        "sizeY": -7
+    },
+    "display_name": "miapi.module.arsex.polearm_chain.name",
+    "item_id": "miapi:modular_item",
+    "module_tag": [
+        "default",
+        "handheld",
+        "head"
+    ],
+            "slots": {
+                "end": {
+                    "allowed": [
+                        "polearm_blade",
+                        "polearm_guard",
+                        "tool_adapter"
+                    ],
+                    "translationKey": "miapi.slot.sword_blade.name",
+                    "transform": {
+                        "rotation": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                        },
+                        "translation": {
+                            "x": -8,
+                            "y": -8,
+                            "z": 0
+                        },
+                        "scale": {
+                            "x": 1,
+                            "y": 1,
+                            "z": 1
+                        }
+                    }
+                }
+            }
+}

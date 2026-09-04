@@ -1,0 +1,181 @@
+{
+    "parent": "tm_arsenal:handle/base",
+    "data": {
+        "merge": {
+            "model": {
+                "path": "miapi:models/item/arsex/twin_polearm/[material.texture].json",
+                "transform": {
+                    "rotation": {
+                        "x": 0,
+                        "y": 0,
+                        "z": 0
+                    },
+                    "translation": {
+                        "x": -3,
+                        "y": -3,
+                        "z": 0
+                    },
+                    "scale": {
+                        "x": 1,
+                        "y": 1,
+                        "z": 1
+                    }
+                }
+            },
+            "priority": 5,
+            "allowed_in_slots": [
+                "melee"
+            ],
+            "slots": {
+                "top": {
+                    "allowed": [
+                        "polearm_blade",
+                        "polearm_guard",
+                        "tool_adapter"
+                    ],
+                    "translationKey": "miapi.slot.sword_blade.name",
+                    "transform": {
+                        "rotation": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                        },
+                        "translation": {
+                            "x": 10,
+                            "y": 10,
+                            "z": 0
+                        },
+                        "scale": {
+                            "x": 1,
+                            "y": 1,
+                            "z": 1
+                        }
+                    }
+                },
+                "bottom": {
+                    "allowed": [
+                        "polearm_blade",
+                        "polearm_guard",
+                        "tool_adapter"
+                    ],
+                    "translationKey": "miapi.slot.sword_blade.name",
+                    "transform": {
+                        "rotation": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 180
+                        },
+                        "translation": {
+                            "x": 0,
+                            "y": 0,
+                            "z": 0
+                        },
+                        "scale": {
+                            "x": 1,
+                            "y": 1,
+                            "z": 1
+                        }
+                    }
+                }
+            },
+            "allowed_material": {
+                "allowedMaterials": [
+                    "wood",
+                    "metal",
+                    "flint",
+                    "bone",
+                    "stone",
+                    "rod",
+                    "crystal",
+                    "glass"
+                ],
+                "cost": 2
+            },
+            "attributes": [
+                {
+                    "attribute": "miapi:generic.reach",
+                    "value": "0.3",
+                    "operation": "+",
+                    "slot": "mainhand"
+                },
+                {
+                    "attribute": "miapi:generic.attack_range",
+                    "value": "0.3",
+                    "operation": "+",
+                    "slot": "mainhand"
+                },
+                {
+                    "attribute": "generic.attack_speed",
+                    "value": "0.1",
+                    "operation": "*",
+                    "slot": "mainhand"
+                },
+                {
+                    "attribute": "generic.attack_speed",
+                    "value": "-2.8",
+                    "operation": "+",
+                    "slot": "mainhand"
+                },
+                {
+                    "attribute": "generic.attack_damage",
+                    "value": "1/[collect.add.module.blade_size]-1",
+                    "operation": "**",
+                    "slot": "mainhand"
+                }
+            ],
+            "gui_offset": {
+                "x": 3,
+                "y": 3,
+                "sizeX": 13,
+                "sizeY": 13
+            },
+            "throw_damage": {
+                "operation": "**",
+                "value": "-0.60"
+            },
+            "throw_speed": {
+                "operation": "**",
+                "value": "-0.60"
+            },
+            "mining_level": {
+                "pickaxe": {
+                    "speed": {
+                        "operation": "**",
+                        "value": "-0.60"
+                    }
+                },
+                "axe": {
+                    "speed": {
+                        "operation": "**",
+                        "value": "-0.60"
+                    }
+                },
+                "shovel": {
+                    "speed": {
+                        "operation": "**",
+                        "value": "-0.60"
+                    }
+                },
+                "hoe": {
+                    "speed": {
+                        "operation": "**",
+                        "value": "-0.60"
+                    }
+                }
+            },
+            "throw_damage": {
+                "operation": "**",
+                "value": "-0.60"
+            },
+            "throw_speed": {
+                "operation": "**",
+                "value": "-0.60"
+            },
+            "display_name": "miapi.module.arsex.twin_polearm.name",
+            "module_tag": [
+                "polearm_handle",
+		"twin_handle"
+            ]
+        }
+    }
+}

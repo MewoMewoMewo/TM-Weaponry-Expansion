@@ -1,0 +1,64 @@
+{
+  "replace": "true",
+  "attributes": {
+    "range_bonus":0.5,
+    "pose": "bettercombat:pose_two_handed_polearm",
+    "two_handed": true,
+    "category": "glaive2",
+    "attacks": [
+      {
+        "hitbox": "HORIZONTAL_PLANE",
+        "damage_multiplier": 0.7,
+        "angle": 180,
+        "upswing": 0.9,
+        "animation": "bettercombat:two_handed_slash_horizontal_right",
+        "swing_sound": {
+          "id": "bettercombat:glaive_slash"
+        }
+      },
+      {
+        "hitbox": "VERTICAL_PLANE",
+        "damage_multiplier": 0.9,
+        "angle": 150,
+        "upswing": 0.3,
+        "animation": "bettercombat:two_handed_slash_vertical_left",
+        "swing_sound": {
+          "id": "bettercombat:glaive_slash",
+          "pitch": 1.1
+        }
+      },
+      {
+        "hitbox": "HORIZONTAL_PLANE",
+        "damage_multiplier": 0.9,
+        "angle": 180,
+        "upswing": 0.9,
+        "animation": "bettercombat:two_handed_slash_horizontal_right",
+        "swing_sound": {
+          "id": "bettercombat:glaive_slash"
+        }
+      },
+      {
+        "hitbox": "HORIZONTAL_PLANE",
+        "damage_multiplier": 0.8,
+        "angle": 360,
+        "upswing": 0.5,
+        "animation": "bettercombat:two_handed_spin",
+        "swing_sound": {
+          "id": "bettercombat:double_axe_swing",
+          "pitch": 1.12
+        }
+      },
+      {
+        "hitbox": "FORWARD_BOX",
+        "damage_multiplier": 1.4,
+        "angle": 0,
+        "upswing": 0.1,
+        "animation": "bettercombat:two_handed_stab_right",
+        "swing_sound": {
+          "id": "bettercombat:spear_stab",
+          "pitch": 0.7
+        }
+      }
+    ]
+  }
+}

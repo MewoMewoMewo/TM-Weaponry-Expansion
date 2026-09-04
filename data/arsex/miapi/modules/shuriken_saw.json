@@ -1,0 +1,127 @@
+{
+    "model": {
+        "path": "miapi:models/item/arsex/shuriken_saw/[material.texture].json",
+        "transform": {
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "translation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "scale": {
+                "x": 0.7,
+                "y": 0.7,
+                "z": 0.7
+            }
+        }
+    },
+            "priority": 5,
+            "allowed_in_slots": [
+                "throwable_teeth"
+            ],
+    "trail": {
+        "maxPoints": 1000,
+        "pointLifetime": 4,
+        "sampleInterval": 0.0,
+        "thickness": 0.3,
+        "texture": "miapi:item/trail_2",
+        "debug": false,
+        "color_provider": "material",
+        "color": {
+            "r": 255.0,
+            "g": 255.0,
+            "b": 255.0,
+            "a": 70.0
+        },
+        "transform": {
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": -45
+            },
+            "translation": {
+                "x": 0.25,
+                "y": 0.25,
+                "z": 0.5
+            },
+            "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+            }
+        }
+    },
+    "projectile_transform": {
+        "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        },
+        "translation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        },
+        "scale": {
+            "x": 0.6,
+            "y": 0.6,
+            "z": 0.6
+        }
+    },
+    "is_weapon": "false",
+    "priority": 7,
+    "repair_priority": -1,
+    "enchantments": {
+        "allowed": [
+            "minecraft:enchantable/sword",
+            "minecraft:enchantable/fire_aspect",
+            "minecraft:enchantable/sharp_weapon",
+            "minecraft:enchantable/weapon",
+            "minecraft:loyalty"
+        ]
+    },
+    "water_drag": "0.89",
+    "allowed_material": {
+        "allowedMaterials": [
+            "wood",
+            "metal",
+            "flint",
+            "bone",
+            "stone",
+            "crystal",
+            "glass"
+        ],
+        "cost": 0.1
+    },
+    "throw_damage": "[material.hardness]*0.4 + [material.flexibility]*0.4",
+    "ability_context": [{
+            "id": "arsex:shuriken_throw",
+            "type": "miapi:throw",
+            "data": {
+                "min_hold_time": "2",
+                "auto_release": true,
+                "animation": "none",
+                "pose_charge": "miapi:throwing_knife_alt",
+                "pose_throw": "none",
+                "cooldown": "8",
+                "throw_position": {
+                    "translation": [0,0,1],
+                    "rotation": [0,0,0],
+                    "scale": [0.6,0.6,0.6]
+                }
+	}
+    }],
+    "slashing":"[material.hardness]*0.6",
+    "display_name": "miapi.module.arsex.shuriken_saw.name",
+    "item_id": "miapi:modular_stackable_item",
+    "module_tag": [
+        "default",
+        "throwing_weapon",
+        "sharp"
+    ],
+"is_arrow":true
+}

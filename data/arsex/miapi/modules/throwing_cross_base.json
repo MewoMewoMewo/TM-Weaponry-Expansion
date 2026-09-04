@@ -1,0 +1,365 @@
+{
+    "model": {
+        "path": "miapi:models/item/arsex/throwing_cross_base/[material.texture].json",
+        "transform": {
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "translation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+            }
+        }
+    },
+            "priority": 3,
+            "allowed_in_slots": [
+                "throwing_cross_base"
+            ],
+    "trail": {
+        "maxPoints": 1000,
+        "pointLifetime": 4,
+        "sampleInterval": 0.0,
+        "thickness": 0.3,
+        "texture": "miapi:item/trail_2",
+        "debug": false,
+        "color_provider": "material",
+        "color": {
+            "r": 255.0,
+            "g": 255.0,
+            "b": 255.0,
+            "a": 70.0
+        },
+        "transform": {
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": -45
+            },
+            "translation": {
+                "x": 0.25,
+                "y": 0.25,
+                "z": 0.5
+            },
+            "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+            }
+        }
+    },
+    "slots": {
+        "socket_medium": {
+            "allowed": [
+                "gem_melee_medium"
+            ],
+            "translationKey": "miapi.slot.gem.name",
+            "transform": {
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "translation": {
+                    "x": 2,
+                    "y": 2,
+                    "z": 0
+                },
+                "scale": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 1
+                }
+            }
+        },
+        "cross_top": {
+            "allowed": [
+                "cross_top"
+            ],
+            "translationKey": "miapi.slot.arsex.cross_top.name",
+            "transform": {
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "translation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "scale": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 1
+                }
+            }
+        },
+        "cross_right": {
+            "allowed": [
+                "cross_right"
+            ],
+            "translationKey": "miapi.slot.arsex.cross_right.name",
+            "transform": {
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "translation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "scale": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 1
+                }
+            }
+        },
+        "cross_left": {
+            "allowed": [
+                "cross_left"
+            ],
+            "translationKey": "miapi.slot.arsex.cross_left.name",
+            "transform": {
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "translation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "scale": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 1
+                }
+            }
+        },
+        "cross_bottom": {
+            "allowed": [
+                "cross_bottom"
+            ],
+            "translationKey": "miapi.slot.arsex.cross_bottom.name",
+            "transform": {
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "translation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "scale": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 1
+                }
+            }
+        }
+    },
+    "projectile_transform": {
+        "rotation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        },
+        "translation": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+        },
+        "scale": {
+            "x": 1,
+            "y": 1,
+            "z": 1
+        }
+    },
+    "projectile_animation": {
+        "type": "miapi:simple_rotation",
+        "axis": "Z",
+        "degrees_per_tick": 150,
+        "offset": 15
+    },
+    "is_weapon": "true",
+    "priority": -3,
+    "repair_priority": -1,
+    "fake_enchants":{
+"minecraft:smite":"[old_level]+2"
+},
+    "water_drag": "0.5",
+    "allowed_material": {
+        "allowedMaterials": [
+            "wood",
+            "metal",
+            "flint",
+            "bone",
+            "stone",
+            "crystal",
+            "glass"
+        ],
+        "cost": 1
+    },
+    "throw_speed": "1",
+    "projectile_accuracy": "-30",
+    "projectile_speed": "-50",
+    "shot_velocity": 1,
+    "attributes": [
+        {
+            "attribute": "minecraft:generic.gravity",
+            "value": "-0.75+[material.density]*0.03",
+            "operation": "*",
+            "slot": "projectile",
+            "target_operation": "*"
+        },
+        {
+            "attribute": "miapi:generic.attack_range",
+            "value": "-0.5",
+            "operation": "+",
+            "slot": "mainhand"
+        },
+        {
+            "attribute": "generic.attack_speed",
+            "value": "-3.1",
+            "operation": "+",
+            "slot": "mainhand"
+        }
+
+    ],
+    "display_name": "miapi.module.arsex.throwing_cross_base.name",
+    "item_id": "miapi:modular_item",
+    "module_tag": [
+        "default",
+        "throwing_weapon"
+    ],
+    "model_transform": {
+        "thirdperson_righthand": {
+            "rotation": {
+                "x": 0,
+                "y": -90,
+                "z": 55
+            },
+            "translation": {
+                "x": 0,
+                "y": 4,
+                "z": 0.5
+            },
+            "scale": {
+                "x": 0.85,
+                "y": 0.85,
+                "z": 0.85
+            }
+        },
+        "thirdperson_lefthand": {
+            "rotation": {
+                "x": -90,
+                "y": -90,
+                "z": -45
+            },
+            "translation": {
+                "x": 0,
+                "y": 4,
+                "z": 0.5
+            },
+            "scale": {
+                "x": 0.85,
+                "y": 0.85,
+                "z": 0.85
+            }
+        },
+        "firstperson_righthand": {
+            "rotation": {
+                "x": 0,
+                "y": -90,
+                "z": 25
+            },
+            "translation": {
+                "x": 1.13,
+                "y": 3.2,
+                "z": 1.13
+            },
+            "scale": {
+                "x": 0.68,
+                "y": 0.68,
+                "z": 0.68
+            }
+        },
+        "firstperson_lefthand": {
+            "rotation": {
+                "x": -90,
+                "y": -90,
+                "z": -65
+            },
+            "translation": {
+                "x": 1.13,
+                "y": 3.2,
+                "z": 1.13
+            },
+            "scale": {
+                "x": 0.68,
+                "y": 0.68,
+                "z": 0.68
+            }
+        },
+        "ground": {
+            "rotation": {
+                "x": 0,
+                "y": 0,
+                "z": 0
+            },
+            "translation": {
+                "x": 0,
+                "y": 2,
+                "z": 0
+            },
+            "scale": {
+                "x": 0.5,
+                "y": 0.5,
+                "z": 0.5
+            }
+        },
+        "head": {
+            "rotation": {
+                "x": 90,
+                "y": 90,
+                "z": 0
+            },
+            "translation": {
+                "x": 0,
+                "y": 13,
+                "z": 7
+            },
+            "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+            }
+        },
+        "fixed": {
+            "rotation": {
+                "x": 0,
+                "y": 180,
+                "z": 0
+            },
+            "scale": {
+                "x": 1,
+                "y": 1,
+                "z": 1
+            }
+        }
+    }
+}

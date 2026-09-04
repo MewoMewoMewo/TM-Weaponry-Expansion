@@ -1,0 +1,122 @@
+{
+	"miapi.module.arsex.cutlass_guard": "Cutlass Guard",
+	"miapi.module.arsex.cutlass_guard.name": "%s Cutlass Guard",
+	"miapi.module.arsex.cutlass_guard.description": "An S-shaped guard, offering protection for your hand.",
+
+	"miapi.module.arsex.cutlass": "Cutlass Blade",
+	"miapi.module.arsex.cutlass.name": "%s Cutlass",
+	"miapi.module.arsex.cutlass.description": "A curved blade for decently quick strikes.",
+
+	"miapi.module.arsex.shortsword": "Shortsword Blade",
+	"miapi.module.arsex.shortsword.name": "%s Shortsword",
+	"miapi.module.arsex.shortsword.description": "Like a sword, but shorter!.",
+
+	"miapi.module.arsex.broadsword": "Broadsword Blade",
+	"miapi.module.arsex.broadsword.name": "%s Broadsword",
+	"miapi.module.arsex.broadsword.description": "A very basic sword blade.",
+
+	"miapi.module.arsex.claymore": "Claymore Blade",
+	"miapi.module.arsex.claymore.name": "%s Claymore",
+	"miapi.module.arsex.claymore.description": "A long, heavy blade, using its mass to its advantage.",
+
+	"miapi.module.arsex.cleaver": "Cleaver Blade",
+	"miapi.module.arsex.cleaver.name": "%s Cleaver",
+	"miapi.module.arsex.cleaver.description": "A meat cleaver like in everyone's kitchen, ideal for cutting up unarmored targets and tossing it.",
+
+	"miapi.module.arsex.machete": "Machete Blade",
+	"miapi.module.arsex.machete.name": "%s Machete",
+	"miapi.module.arsex.machete.description": "A machete, as decent at getting through jungles as decent it is at getting through enemies.",
+
+	"miapi.module.arsex.glaive": "Glaive Blade",
+	"miapi.module.arsex.glaive.name": "%s Glaive",
+	"miapi.module.arsex.glaive.description": "A blade on a polearm, for long-ranged swipes.",
+
+	"miapi.module.arsex.fishing_spear": "Fishing Spear Head",
+	"miapi.module.arsex.fishing_spear.name": "%s Fishing Spear",
+	"miapi.module.arsex.fishing_spear.description": "Not great for combat, the fishing spear provides additional loot on kills.",
+
+	"miapi.module.arsex.lance": "Lance Head",
+	"miapi.module.arsex.lance.name": "%s Lance",
+	"miapi.module.arsex.lance.description": "Best working when mounted, the lance relies on velocity to ditch out damage.",
+
+	"miapi.module.arsex.pike": "Pike Head",
+	"miapi.module.arsex.pike.name": "%s Pike",
+	"miapi.module.arsex.pike.description": "What's better than a long stick? A longer pokey stick!",
+
+	"miapi.module.arsex.halberd": "Halberd Head",
+	"miapi.module.arsex.halberd.name": "%s Halberd",
+	"miapi.module.arsex.halberd.description": "A versatile polearm, used for both sweeping and thrusting.",
+
+	"miapi.module.arsex.quarterstaff": "Quarterstaff Head",
+	"miapi.module.arsex.quarterstaff.name": "%s Quarterstaff",
+	"miapi.module.arsex.quarterstaff.description": "A quick, weak staff to bonk enemies with. Doesn't do much damage, unless the enemy is wearing tough armor.",
+
+	"miapi.module.arsex.greathammer": "Greathammer Head",
+	"miapi.module.arsex.greathammer.name": "%s Greathammer",
+	"miapi.module.arsex.greathammer.description": "A slow, heavy hammer, best at destroying everything in its path! ...if you find the time to swing it.",
+
+	"miapi.module.arsex.spade": "Spade Head",
+	"miapi.module.arsex.spade.name": "%s Spade",
+	"miapi.module.arsex.spade.description": "A shovel, more suitable for combat than its normal counterpart, though a little worse at digging.",
+
+	"miapi.module.arsex.club": "Club Head",
+	"miapi.module.arsex.club.name": "%s Club",
+	"miapi.module.arsex.club.description": "A blunt, simple unga-bunga stick. Just hit your enemies with it.",
+
+	"miapi.module.arsex.heavy_club": "Heavy Club Head",
+	"miapi.module.arsex.heavy_club.name": "%s Heavy Club",
+	"miapi.module.arsex.heavy_club.description": "Just like a club, but bigger and heavier.",
+
+	"miapi.module.arsex.mallet": "Mallet Head",
+	"miapi.module.arsex.mallet.name": "%s Mallet",
+	"miapi.module.arsex.mallet.description": "Smaller, weaker hammer. Its reduced weight lets you attack faster with it though!",
+
+	"miapi.module.arsex.morning_star": "Morning Star Head",
+	"miapi.module.arsex.morning_star.name": "%s Morning Star",
+	"miapi.module.arsex.morning_star.description": "What's better than a mace? A mace with spikes on it!",
+
+	"miapi.module.arsex.twin_polearm": "Twin Polearm Handle",
+	"miapi.module.arsex.twin_polearm.name": "%s Twin Polearm",
+	"miapi.module.arsex.twin_polearm.description": "Double the polearm for double the fun! Though...wielding it might be a problem...",
+
+	"miapi.module.arsex.throwing_cross_base": "Throwing Cross Base",
+	"miapi.module.arsex.throwing_cross_base.name": "%s Throwing Cross Base",
+	"miapi.module.arsex.throwing_cross_base.description": "The base of a throwing cross. The cross may have some symbolism.",
+
+	"miapi.module.arsex.throwing_cross_top": "Top Cross Tip",
+	"miapi.module.arsex.throwing_cross_top.description": "The top part of a throwing cross. The only heads you can put there are from dolls.",
+
+	"miapi.module.arsex.throwing_cross_right": "Right Cross Tip",
+	"miapi.module.arsex.throwing_cross_right.description": "The right part of a throwing cross. You could try to nail some animal paws to it.",
+
+	"miapi.module.arsex.throwing_cross_left": "Left Cross Tip",
+	"miapi.module.arsex.throwing_cross_left.description": "The left part of a throwing cross. You could try to nail some animal paws to it.",
+
+	"miapi.module.arsex.throwing_cross_bottom": "Bottom Cross Tip",
+	"miapi.module.arsex.throwing_cross_bottom.description": "The bottom part of a throwing cross. You could get a bunny's legs nailed to it if you tried.",
+
+	"miapi.module.arsex.throwing_cross.name": "%s Throwing Cross",
+
+	"miapi.module.arsex.shuriken_base": "Shuriken Base",
+	"miapi.module.arsex.shuriken_base.name": "%s Shuriken Ring",
+	"miapi.module.arsex.shuriken_base.description": "A little ring which forms the base of shurikens and similar throwables.",
+
+	"miapi.module.arsex.shuriken_teeth": "Shuriken Teeth",
+	"miapi.module.arsex.shuriken_teeth.name": "%s Shuriken",
+	"miapi.module.arsex.shuriken_teeth.description": "Shuriken teeth which dig into armor quite well.",
+
+	"miapi.module.arsex.shuriken_saw": "Sawblade",
+	"miapi.module.arsex.shuriken_saw.name": "%s Sawblade",
+	"miapi.module.arsex.shuriken_saw.description": "A sawblade which, while not good with armor, is great at giving enemies deep cuts when thrown at them.",
+
+	"miapi.create_item.arsex.shuriken": "Shuriken (1)",
+	"miapi.create_item.arsex.shuriken_stack": "Shuriken (64)",
+	"miapi.create_item.arsex.throwing_cross": "Throwing Cross",
+	"miapi.create_item.arsex.twin_polearm": "Twin Polearm",
+
+	"miapi.slot.arsex.throwable_teeth.name": "Teeth",
+	"miapi.slot.arsex.cross_right.name": "Right Tip",
+	"miapi.slot.arsex.cross_top.name": "Top Tip",
+	"miapi.slot.arsex.cross_left.name": "Left Tip",
+	"miapi.slot.arsex.cross_bottom.name": "Bottom Tip"
+}

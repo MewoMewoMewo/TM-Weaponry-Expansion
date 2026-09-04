@@ -1,0 +1,105 @@
+{
+    "model": [
+        {
+            "path": "miapi:models/item/arsex/morning_star/[material.texture].json",
+            "transform": {
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "translation": {
+                    "x": -5,
+                    "y": -5,
+                    "z": 0
+                },
+                "scale": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 1
+                }
+            }
+        }
+    ],
+    "module_stats": {
+        "blade_size": 1,
+        "depth": 1,
+        "width": 3,
+        "height": 3,
+        "speed": 5
+    },
+    "priority": 1,
+    "repair_priority": -1,
+    "better_combat_config": "bettercombat:club",
+    "allowed_in_slots": [
+        "tool_head"
+    ],
+    "enchantments": {
+        "allowed": [
+            "minecraft:breach"
+        ]
+    },
+    "allowed_material": {
+        "allowedMaterials": [
+            "wood",
+            "metal",
+            "flint",
+            "bone",
+            "stone",
+            "rod",
+            "crystal"
+        ],
+        "cost": 4
+    },
+   "material_indication": {
+        "density": {
+            "strength": 3,
+            "info": {
+                "type": "translatable",
+                "translate": "tm_arsenal.material_indication.blade.damage",
+                "color": "dark_gray"
+            }
+        },
+        "durability": 1
+    },
+    "attributes": [
+        {
+            "attribute": "miapi:generic.reach",
+            "value": "0",
+            "operation": "+",
+            "slot": "mainhand"
+        },
+        {
+            "attribute": "miapi:generic.attack_range",
+            "value": "0",
+            "operation": "+",
+            "slot": "mainhand"
+        },
+        {
+            "attribute": "generic.attack_speed",
+            "value": " -0.7-[material.density]*0.1",
+            "operation": "+",
+            "slot": "mainhand"
+        },
+        {
+            "attribute": "generic.attack_damage",
+            "value": "[material.hardness]/1.4+[material.density]*1.1",
+            "operation": "+",
+            "slot": "mainhand"
+        },
+        {
+            "attribute": "miapi:generic.armor_crushing",
+            "value": "[material.hardness]/2+[material.density]*1.2",
+            "operation": "+",
+            "slot": "mainhand"
+        }
+    ],
+    "durability": "[material.durability]* 0.5",
+    "display_name": "miapi.module.arsex.morning_star.name",
+    "item_id": "miapi:modular_mace",
+    "module_tag": [
+        "default",
+        "handheld",
+        "head"
+    ]
+}

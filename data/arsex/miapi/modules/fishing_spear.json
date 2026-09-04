@@ -1,0 +1,113 @@
+{
+    "model": [
+        {
+            "path": "miapi:models/item/arsex/fishing_spear/[material.texture].json",
+            "color": "[material.color]",
+            "transform": {
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "translation": {
+                    "x": -4,
+                    "y": -4,
+                    "z": -0.001
+                },
+                "scale": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 1
+                }
+            }
+        }
+    ],
+    "is_weapon": "true",
+    "module_stats": {
+        "blade_size": 1
+    },
+    "priority": -12,
+    "repair_priority": -1,
+    "enchantments": {
+        "allowed": [
+            "minecraft:enchantable/sword",
+            "minecraft:enchantable/fire_aspect",
+            "minecraft:enchantable/sharp_weapon",
+            "minecraft:enchantable/weapon",
+            "minecraft:loyalty"
+        ]
+    },
+    "allowed_in_slots": [
+        "polearm_blade"
+    ],
+    "allowed_material": {
+        "allowedMaterials": [
+            "wood",
+            "metal",
+            "flint",
+            "bone",
+            "stone",
+            "crystal",
+            "glass"
+        ],
+        "cost": 1
+    },
+    "material_indication": {
+        "hardness": {
+            "strength": 2,
+            "info": {
+                "type": "translatable",
+                "translate": "tm_arsenal.material_indication.blade.damage",
+                "color": "dark_gray"
+            }
+        },
+        "durability": 1
+    },
+    "attributes": [
+        {
+            "attribute": "generic.attack_speed",
+            "value": "-0.4",
+            "operation": "+",
+            "slot": "mainhand"
+        },
+        {
+            "attribute": "generic.attack_damage",
+            "value": "[material.hardness]*0.9",
+            "operation": "+",
+            "slot": "mainhand"
+        }
+    ],
+    "throw_damage": "[material.hardness]*0.65",
+    "throw_speed": "2.2",
+    "projectile_accuracy": "15",
+    "durability": "[material.durability]* 0.5",
+    "ability_context": [
+        {
+            "id": "tm_arsenal:throw",
+            "priority": 1,
+            "type": "miapi:throw",
+            "data": {
+
+            }
+        }
+    ],
+    "fake_enchants":{
+"minecraft:looting":"[old_level]+3"
+},
+    "gui_offset": {
+        "sizeX": -6,
+        "sizeY": -6
+    },
+    "better_combat_config": "bettercombat:trident",
+    "display_name": "miapi.module.arsex.fishing_spear.name",
+    "item_id": "miapi:modular_trident",
+    "module_tag": [
+        "default",
+        "handheld",
+        "blade",
+        "head",
+        "throwing_weapon",
+        "trident",
+        "blade"
+    ]
+}

@@ -1,0 +1,95 @@
+{
+    "model": [
+        {
+            "path": "miapi:models/item/arsex/quarterstaff/[material.texture].json",
+            "color": "[material.color]",
+            "transform": {
+                "rotation": {
+                    "x": 0,
+                    "y": 0,
+                    "z": 0
+                },
+                "translation": {
+                    "x": -3,
+                    "y": -3,
+                    "z": -0.001
+                },
+                "scale": {
+                    "x": 1,
+                    "y": 1,
+                    "z": 1
+                }
+            }
+        }
+    ],
+    "is_weapon": "true",
+    "module_stats": {
+        "blade_size": 1
+    },
+    "priority": -14,
+    "repair_priority": -1,
+    "enchantments": {
+        "allowed": [
+            "minecraft:enchantable/sword",
+            "minecraft:enchantable/fire_aspect",
+            "minecraft:enchantable/sharp_weapon",
+            "minecraft:enchantable/weapon"
+        ]
+    },
+    "allowed_in_slots": [
+        "polearm_blade"
+    ],
+    "allowed_material": {
+        "allowedMaterials": [
+            "wood",
+            "metal",
+            "flint",
+            "bone",
+            "stone",
+            "crystal",
+            "glass"
+        ],
+        "cost": 1
+    },
+    "material_indication": {
+        "hardness": {
+            "strength": 2,
+            "info": {
+                "type": "translatable",
+                "translate": "tm_arsenal.material_indication.blade.damage",
+                "color": "dark_gray"
+            }
+        },
+        "durability": 1
+    },
+    "attributes": [
+        {
+            "attribute": "generic.attack_speed",
+            "value": "0.7-[material.density]*0.04",
+            "operation": "+",
+            "slot": "mainhand"
+        },
+        {
+            "attribute": "generic.attack_damage",
+            "value": "0",
+            "operation": "+",
+            "slot": "mainhand"
+        },
+        {
+            "attribute": "miapi:generic.attack_range",
+            "value": "0.25",
+            "operation": "+",
+            "slot": "mainhand"
+        }
+    ],
+    "bludgeon":"[material.hardness]*0.82 + [material.density]*0.2",
+    "better_combat_config": "bettercombat:battlestaff",
+    "display_name": "miapi.module.arsex.quarterstaff.name",
+    "item_id": "miapi:modular_hammer",
+    "module_tag": [
+        "default",
+        "handheld",
+        "head",
+        "blunt"
+    ]
+}

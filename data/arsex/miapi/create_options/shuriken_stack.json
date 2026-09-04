@@ -1,0 +1,6 @@
+{
+    "module": "arsex:shuriken_base",
+    "translation": "miapi.create_item.arsex.shuriken_stack",
+    "count":64,
+    "priority": -55
+}
