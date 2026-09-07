@@ -63,6 +63,7 @@
         },
         "durability": 1
     },
+    "durability": "[material.durability]* 0.5",
     "attributes": [
         {
             "attribute": "generic.attack_speed",
